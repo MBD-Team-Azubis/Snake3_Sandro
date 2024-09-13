@@ -23,23 +23,6 @@ function randomIntFromInterval(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-// function repeat(torepeat: () => void, numberofRepeats: number) {
-//   for (let i = 0; i < numberofRepeats; i++) {
-//     torepeat();
-//   }
-// }
-
-// position define, tile size * snake y or x + body margin
-// repeat(() => {
-//   const foodDiv = document.createElement("food");
-//   foodDiv.classList.add("food");
-//   foodDiv.setAttribute(
-//     "style",
-//     `position: absolute;top: calc(${tile.toString()}px * ${food[0].y.toString()}.25 + 8px);left: calc(${tile.toString()}px * ${food[0].x.toString()}.25 + 8px)`
-//   );
-//   playground.appendChild(foodDiv);
-// }, 3);
-
 for (let i = 0; i < foodcount; i++) {
   const x = randomIntFromInterval(0, 14);
   const y = randomIntFromInterval(0, 14);
